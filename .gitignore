@@ -11,6 +11,9 @@ dist
 build
 lib
 
+#credentials
+.credentials
+
 # misc
 .DS_Store
 .env
