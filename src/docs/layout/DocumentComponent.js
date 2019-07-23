@@ -29,7 +29,7 @@ const DocumentExamples = (props) => {
     <div className="docs-component-props mt-5">
       <h3>{name}</h3>
       { demo && (
-        <div className="docs-example">
+        <div className="docs-example-custom">
           {demo}
         </div>
       )}

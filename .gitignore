@@ -12,7 +12,7 @@ build
 lib
 
 #credentials
-.credentials
+.credentials.json
 
 # misc
 .DS_Store

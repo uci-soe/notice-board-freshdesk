@@ -9,15 +9,17 @@ import {
   Col,
   Row
 } from 'reactstrap';
-import { HelloWorld } from '../components';
+import { Noticeboard } from '../components';
+import { freshdesk } from '../../.credentials.json';
+
 
 const example = dedent(`
   import React from 'react';
-  import { HelloWorld } from 'component-template';
+  import { Noticeboard } from 'uci-soe/notice-board-freshdesk';
 
   const Example = () => {
     return (
-      <HelloWorld name="World" />
+        <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={1} />
     );
   };
 
@@ -33,7 +35,8 @@ const Home = ({title, gh}) => {
             <Col sm={{ size: 10, offset: 1}}>
               <h1 className="display-4">{title}</h1>
               <p className="lead my-3">
-                An example reactstrap component built, documented & published with <a href="https://github.com/reactstrap/component-template">Component Template</a>
+                An example reactstrap component built, documented & published with <a href="https://github.com/reactstrap/component-template">Component Template </a>
+                that displays incoming tasks assigned to the Technical Support Team at UCI School of Education.
               </p>
               <p>
                 <Button outline color="danger" href={`https://github.com/${gh}`}>View on Github</Button>
@@ -53,14 +56,14 @@ const Home = ({title, gh}) => {
             </p>
             <pre>
               <PrismCode className="language-bash">
-                npm install component-template --save
+                npm install uci-soe/notice-board-freshdesk --save
               </PrismCode>
             </pre>
             <p>
               ES6 - import the component you need
             </p>
-            <div className="docs-example">
-              <HelloWorld name="World" />
+            <div className="docs-example-custom">
+                <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={2} />
             </div>
             <pre>
               <PrismCode className="language-jsx">

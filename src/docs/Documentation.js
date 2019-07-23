@@ -1,13 +1,14 @@
 import React from 'react';
 import LayoutContent from './layout/Content';
 
-import HelloWorldDocs from './components/HelloWorldDocs';
+import NoticeboardDocs from './components/NoticeboardDocs';
 
 const Documentation = () => {
   return (
     <div>
       <LayoutContent>
-        <HelloWorldDocs />
+        {/* <HelloWorldDocs /> */}
+        <NoticeboardDocs />
       </LayoutContent>
     </div>
   );

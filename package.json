@@ -61,5 +61,9 @@
     "react-component",
     "reactstrap-component",
     "bootstrap"
-  ]
+  ],
+  "dependencies": {
+    "axios": "^0.19.0",
+    "moment": "^2.24.0"
+  }
 }
