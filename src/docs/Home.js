@@ -10,7 +10,6 @@ import {
   Row
 } from 'reactstrap';
 import { Noticeboard } from '../components';
-import { freshdesk } from '../../.credentials.json';
 
 
 const example = dedent(`
@@ -63,7 +62,7 @@ const Home = ({title, gh}) => {
               ES6 - import the component you need
             </p>
             <div className="docs-example-custom">
-                <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={2} />
+                <Noticeboard subdomain="ucieducation" limit={2} />
             </div>
             <pre>
               <PrismCode className="language-jsx">

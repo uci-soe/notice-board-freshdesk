@@ -10,10 +10,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './prism.css';
 import './index.css';
 
-import axios from 'axios';
-import mockTickets from '../test-data/mock-tickets';
-mockTickets(axios);
-
 const title = 'Noticeboard Freshdesk';
 const gh = 'uci-soe/notice-board-freshdesk';
 // if using a root url, remove the basename value here and in BrowserRouter
