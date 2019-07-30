@@ -5,11 +5,14 @@ import LayoutFooter from './layout/Footer';
 import Home from './Home';
 import Documentation from './Documentation';
 
-import './StubAxios';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './prism.css';
 import './index.css';
+
+import axios from 'axios';
+import mockTickets from '../test-data/mock-tickets';
+mockTickets(axios);
 
 const title = 'Noticeboard Freshdesk';
 const gh = 'uci-soe/notice-board-freshdesk';
