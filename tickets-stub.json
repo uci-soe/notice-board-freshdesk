@@ -1,0 +1,280 @@
+[
+    {
+        "cc_emails":[
+
+        ],
+        "fwd_emails":[
+
+        ],
+        "reply_cc_emails":[
+
+        ],
+        "ticket_cc_emails":[
+
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024804487,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":4,
+        "subject":"Richard's office is vacant",
+        "association_type":null,
+        "to_emails":[
+            "\"education-tech-services@uci.edu\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1551,
+        "type":"Routine Tasks",
+        "due_by":"2019-07-29T17:22:35Z",
+        "fr_due_by":"2019-07-26T21:22:35Z",
+        "is_escalated":false,
+        "custom_fields":{
+            "cf_support_division":"Administrative",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":null
+        },
+        "created_at":"2019-07-22T17:22:35Z",
+        "updated_at":"2019-07-22T20:14:26Z",
+        "associated_tickets_count":null,
+        "tags":[
+
+        ]
+    },
+    {
+        "cc_emails":[
+
+        ],
+        "fwd_emails":[
+
+        ],
+        "reply_cc_emails":[
+
+        ],
+        "ticket_cc_emails":[
+
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024904204,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":4,
+        "subject":"Packages Received - Hyuk",
+        "association_type":null,
+        "to_emails":[
+            "\"Spenser Clark\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1539,
+        "type":"Routine Tasks",
+        "due_by":"2019-07-25T16:42:21Z",
+        "fr_due_by":"2019-07-24T20:42:21Z",
+        "is_escalated":false,
+        "custom_fields":{
+            "cf_support_division":"Research",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":"Simpkins"
+        },
+        "created_at":"2019-07-18T16:42:21Z",
+        "updated_at":"2019-07-18T17:19:18Z",
+        "associated_tickets_count":null,
+        "tags":[
+
+        ]
+    },
+    {
+        "cc_emails":[
+
+        ],
+        "fwd_emails":[
+
+        ],
+        "reply_cc_emails":[
+
+        ],
+        "ticket_cc_emails":[
+
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024902172,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":5,
+        "subject":"Computer wont turn on",
+        "association_type":null,
+        "to_emails":[
+            "\"education-tech-services@uci.edu\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1521,
+        "type":"Systems and Networking",
+        "due_by":"2019-07-23T16:10:52Z",
+        "fr_due_by":"2019-07-22T20:10:52Z",
+        "is_escalated":false,
+        "custom_fields":{
+            "cf_support_division":"Research",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":null
+        },
+        "created_at":"2019-07-16T16:10:52Z",
+        "updated_at":"2019-07-24T03:14:00Z",
+        "associated_tickets_count":null,
+        "tags":[
+
+        ]
+    },
+    {
+        "cc_emails":[
+
+        ],
+        "fwd_emails":[
+
+        ],
+        "reply_cc_emails":[
+
+        ],
+        "ticket_cc_emails":[
+
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024813458,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":3,
+        "subject":"June Ahn trailer & two videos",
+        "association_type":null,
+        "to_emails":[
+            "\"Spenser Clark\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1502,
+        "type":"Media Production",
+        "due_by":"2019-07-19T21:29:26Z",
+        "fr_due_by":"2019-07-19T16:54:39Z",
+        "is_escalated":false,
+        "custom_fields":{
+            "cf_support_division":"Administrative",
+            "cf_complexity":null,
+            "cf_pi":null
+        },
+        "created_at":"2019-07-12T20:54:39Z",
+        "updated_at":"2019-07-24T00:00:25Z",
+        "associated_tickets_count":null,
+        "tags":[
+
+        ]
+    },
+    {
+        "cc_emails":[
+            "hosunk@uci.edu",
+            "masonn3@uci.edu"
+        ],
+        "fwd_emails":[
+
+        ],
+        "reply_cc_emails":[
+            "hosunk@uci.edu"
+        ],
+        "ticket_cc_emails":[
+            "hosunk@uci.edu"
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043046381932,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":5,
+        "subject":"Re: hosun lab updates, admin account, keyboard cable",
+        "association_type":null,
+        "to_emails":[
+            "education-tech-services@uci.edu"
+        ],
+        "product_id":null,
+        "id":1460,
+        "type":"Routine Tasks",
+        "due_by":"2019-07-16T17:11:00Z",
+        "fr_due_by":"2019-07-12T21:24:10Z",
+        "is_escalated":false,
+        "custom_fields":{
+            "cf_support_division":"Research",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":"Kang"
+        },
+        "created_at":"2019-07-08T17:24:09Z",
+        "updated_at":"2019-07-17T17:12:46Z",
+        "associated_tickets_count":null,
+        "tags":[
+            "Mason Nguyen"
+        ]
+    },
+    {
+        "cc_emails":[
+
+        ],
+        "fwd_emails":[
+
+        ],
+        "reply_cc_emails":[
+
+        ],
+        "ticket_cc_emails":[
+
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024904204,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":5,
+        "subject":"Package Received",
+        "association_type":null,
+        "to_emails":[
+            "\"Spenser Clark\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1388,
+        "type":"Routine Tasks",
+        "due_by":"2019-07-02T16:19:51Z",
+        "fr_due_by":"2019-07-01T20:19:51Z",
+        "is_escalated":false,
+        "custom_fields":{
+            "cf_support_division":"Administrative",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":null
+        },
+        "created_at":"2019-06-25T16:19:51Z",
+        "updated_at":"2019-07-02T17:11:34Z",
+        "associated_tickets_count":null,
+        "tags":[
+            "Mason Nguyen",
+            "Xinhao Liang"
+        ]
+    }
+]

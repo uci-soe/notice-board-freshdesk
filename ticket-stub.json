@@ -1,0 +1,353 @@
+{
+    "1551": {
+        "cc_emails":[
+    
+        ],
+        "fwd_emails":[
+    
+        ],
+        "reply_cc_emails":[
+    
+        ],
+        "ticket_cc_emails":[
+    
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024804487,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":4,
+        "subject":"Richard's office is vacant",
+        "association_type":null,
+        "to_emails":[
+            "\"education-tech-services@uci.edu\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1551,
+        "type":"Routine Tasks",
+        "due_by":"2019-07-29T17:22:35Z",
+        "fr_due_by":"2019-07-26T21:22:35Z",
+        "is_escalated":false,
+        "description":"<div class=\"WordSection1\">\n<div class=\"MsoNormal\">Hi Rhett, just to let you know the meeting is over/and folks have left, from Richard’s office; in case you wanted to do the updates on his computer.  Thanks!</div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\">Catarina de Carvalho</div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\">Assistant to the Dean</div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\">UCI School of Education</div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\">Tel: (949) 824-8026</div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\">Email: <a href=\"mailto:cdecarva@uci.edu\" rel=\"noreferrer\">cdecarva@uci.edu</a>\n</div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"></div>\n<div> </div>\n<div></div>\n</div>\n\n\n",
+        "description_text":"Hi Rhett, just to let you know the meeting is over/and folks have left, from Richard's office; in case you wanted to do the updates on his computer.  Thanks!\r\n\r\nCatarina de Carvalho\r\nAssistant to the Dean\r\nUCI School of Education\r\nTel: (949) 824-8026\r\nEmail: cdecarva@uci.edu<mailto:cdecarva@uci.edu>\r\n\r\n\r\n_______________________________________________\r\nEducation-Tech-Services mailing list\r\nEducation-Tech-Services@department-lists.uci.edu\r\nhttps://department-lists.uci.edu/mailman/listinfo/education-tech-services\r\n\r\n",
+        "custom_fields":{
+            "cf_support_division":"Administrative",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":null
+        },
+        "created_at":"2019-07-22T17:22:35Z",
+        "updated_at":"2019-07-22T20:14:26Z",
+        "tags":[
+    
+        ],
+        "attachments":[
+    
+        ],
+        "source_additional_info":null,
+        "requester":{
+            "id":2043024804487,
+            "name":"Catarina de Carvalho",
+            "email":"cdecarva@uci.edu",
+            "mobile":null,
+            "phone":null
+        }
+    },
+    "1539": {
+        "cc_emails":[
+    
+        ],
+        "fwd_emails":[
+    
+        ],
+        "reply_cc_emails":[
+    
+        ],
+        "ticket_cc_emails":[
+    
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024904204,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":4,
+        "subject":"Packages Received - Hyuk",
+        "association_type":null,
+        "to_emails":[
+            "\"Spenser Clark\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1539,
+        "type":"Routine Tasks",
+        "due_by":"2019-07-25T16:42:21Z",
+        "fr_due_by":"2019-07-24T20:42:21Z",
+        "is_escalated":false,
+        "description":"<div class=\"WordSection1\">\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Hello,</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>We received two HP packages for Hyuk here at our office. Make sure to bring a cart when stopping by to pick them up.</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Thanks!</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>--</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Sincerely,</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><b><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Kimberly Pham</span></b></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Administrative Assistant</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Office of the Dean</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>UC Irvine School of Education</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>(949) 824-8073 | 3200 Education</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'><a href=\"http://www.education.uci.edu/\" rel=\"noreferrer\"><span style=\"color:#0563C1\">www.education.uci.edu</span></a>\n</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"></div>\n<div> </div>\n<div></div>\n</div>\n\n\n",
+        "description_text":"Hello,\r\n\r\nWe received two HP packages for Hyuk here at our office. Make sure to bring a cart when stopping by to pick them up.\r\n\r\nThanks!\r\n\r\n--\r\nSincerely,\r\n\r\nKimberly Pham\r\nAdministrative Assistant\r\nOffice of the Dean\r\nUC Irvine School of Education\r\n(949) 824-8073 | 3200 Education\r\nwww.education.uci.edu<http://www.education.uci.edu/>\r\n\r\n\r\n_______________________________________________\r\nEducation-Tech-Services mailing list\r\nEducation-Tech-Services@department-lists.uci.edu\r\nhttps://department-lists.uci.edu/mailman/listinfo/education-tech-services\r\n\r\n",
+        "custom_fields":{
+            "cf_support_division":"Research",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":"Simpkins"
+        },
+        "created_at":"2019-07-18T16:42:21Z",
+        "updated_at":"2019-07-18T17:19:18Z",
+        "tags":[
+    
+        ],
+        "attachments":[
+    
+        ],
+        "source_additional_info":null,
+        "requester":{
+            "id":2043024904204,
+            "name":"Kimberly Pham",
+            "email":"k.pham@uci.edu",
+            "mobile":null,
+            "phone":null
+        }
+        
+    },
+    "1521": {
+        "cc_emails":[
+    
+        ],
+        "fwd_emails":[
+    
+        ],
+        "reply_cc_emails":[
+    
+        ],
+        "ticket_cc_emails":[
+    
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024902172,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":5,
+        "subject":"Computer wont turn on",
+        "association_type":null,
+        "to_emails":[
+            "\"education-tech-services@uci.edu\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1521,
+        "type":"Systems and Networking",
+        "due_by":"2019-07-23T16:10:52Z",
+        "fr_due_by":"2019-07-22T20:10:52Z",
+        "is_escalated":false,
+        "description":"<div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\">\nGood morning all, </div>\n<div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\">\nCould we have some assistance with one of our lab computers this morning? It won't turn on although it is making as if the hard drive is running. </div>\n<div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\">\n<br>\n</div>\n<div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\">\nThank you, </div>\n<div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\">\nNayssan </div>\n<div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\">\n<br>\n</div>\n<div id=\"Signature\">\n<div id=\"divtagdefaultwrapper\" dir=\"ltr\" style='font-size:12pt; color:rgb(0,0,0); background-color:rgb(255,255,255); font-family:Calibri,Arial,Helvetica,sans-serif,EmojiFont,\"Apple Color Emoji\",\"Segoe UI Emoji\",NotoColorEmoji,\"Segoe UI Symbol\",\"Android Emoji\",EmojiSymbols'>\n<div style=\"margin-top: 0px; margin-bottom: 0px;\"><span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\">Nayssan Safavian, Ph.D.</span></div>\n<span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\"></span>\n<div style=\"margin-top: 0px; margin-bottom: 0px;\"><span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\">Research Scientist</span></div>\n<span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\"></span>\n<div style=\"margin-top: 0px; margin-bottom: 0px;\"></div>\n<div class=\"x_x_MsoNormal\" style=\"margin-top: 0px; margin-bottom: 0px;margin:0in 0in 0.0001pt; color:rgb(33,33,33); font-size:12pt; font-family:Calibri,sans-serif\">\n<span style=\"font-size:11pt; font-style:inherit; font-variant-ligatures:inherit; font-variant-caps:inherit; font-weight:inherit; font-family:Calibri,Helvetica,sans-serif; color:rgb(0,0,0)\">Co-Principal</span><span style=\"color:rgb(0,0,0); font-size:11pt; font-style:inherit; font-variant-ligatures:inherit; font-variant-caps:inherit; font-weight:inherit; font-family:Calibri,Helvetica,sans-serif\">\n Investigator, C</span><span style=\"color:rgb(0,0,0); font-size:11pt; font-style:inherit; font-variant-ligatures:inherit; font-variant-caps:inherit; font-weight:inherit; font-family:Calibri,Helvetica,sans-serif\">A Achievement Motivation Project</span><br>\n</div>\n<div class=\"x_x_MsoNormal\" style=\"margin-top: 0px; margin-bottom: 0px;margin:0in 0in 0.0001pt; color:rgb(33,33,33); font-size:12pt; font-family:Calibri,sans-serif\">\n<span style=\"margin:0px; padding:0px; border:0px; font-style:inherit; font-variant:inherit; font-weight:inherit; font-stretch:inherit; font-size:11pt; line-height:inherit; font-family:inherit; vertical-align:baseline; color:inherit\"><span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\">Co-Principal\n Investigator, </span><span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\">Utility-Value Intervention Study</span></span>\n</div>\n<div style=\"margin-top: 0px; margin-bottom: 0px;\"></div>\n<div style=\"margin-top: 0px; margin-bottom: 0px;\">\n<span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\">Motivation and Identity Research Lab</span><br>\n</div>\n<span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\"></span>\n<div style=\"margin-top: 0px; margin-bottom: 0px;\">\n<span style=\"font-size:11pt; font-family:Calibri,Helvetica,sans-serif; color:rgb(0,0,0)\">School of Education</span><br>\n<span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\"></span>\n</div>\n<span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\"></span>\n<div style=\"margin-top: 0px; margin-bottom: 0px;\"><span style=\"font-family:Calibri,Helvetica,sans-serif; font-size:11pt; color:rgb(0,0,0)\">University of California, Irvine</span></div>\n<span style=\"color:rgb(0,0,0)\"></span>\n<div style=\"margin-top: 0px; margin-bottom: 0px;\">\n<br>\n</div>\n</div>\n</div>\n\n\n",
+        "description_text":"Good morning all,\r\nCould we have some assistance with one of our lab computers this morning? It won't turn on although it is making as if the hard drive is running.\r\n\r\nThank you,\r\nNayssan\r\n\r\n\r\nNayssan Safavian, Ph.D.\r\n\r\nResearch Scientist\r\n\r\nCo-Principal Investigator, CA Achievement Motivation Project\r\n\r\nCo-Principal Investigator, Utility-Value Intervention Study\r\n\r\nMotivation and Identity Research Lab\r\n\r\nSchool of Education\r\n\r\nUniversity of California, Irvine\r\n\r\n\r\n_______________________________________________\r\nEducation-Tech-Services mailing list\r\nEducation-Tech-Services@department-lists.uci.edu\r\nhttps://department-lists.uci.edu/mailman/listinfo/education-tech-services\r\n\r\n",
+        "custom_fields":{
+            "cf_support_division":"Research",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":null
+        },
+        "created_at":"2019-07-16T16:10:52Z",
+        "updated_at":"2019-07-24T03:14:00Z",
+        "tags":[
+    
+        ],
+        "attachments":[
+    
+        ],
+        "source_additional_info":null,
+        "requester":{
+            "id":2043024902172,
+            "name":"Nayssan S. Safavian",
+            "email":"nayssan.safavian@uci.edu",
+            "mobile":null,
+            "phone":null
+        }
+    },
+    "1502": {
+        "cc_emails":[
+    
+        ],
+        "fwd_emails":[
+    
+        ],
+        "reply_cc_emails":[
+    
+        ],
+        "ticket_cc_emails":[
+    
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024813458,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":3,
+        "subject":"June Ahn trailer & two videos",
+        "association_type":null,
+        "to_emails":[
+            "\"Spenser Clark\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1502,
+        "type":"Media Production",
+        "due_by":"2019-07-19T21:29:26Z",
+        "fr_due_by":"2019-07-19T16:54:39Z",
+        "is_escalated":false,
+        "description":"<div class=\"WordSection1\">\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\">HI Spenser,</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\"></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\">Here is some feedback and requests for changes on some of the June Ahn videos:</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\"></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\">Trailer – need closing referrals</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\"></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\">5-Year – Possible to start at “When you think about your own scholarship” and eliminate “Another question I’d like to ask”?</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\" style=\"text-indent:.5in\"><span style=\"font-size:11.0pt\">Need closing referrals\n</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\"></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\">Why I Came to UCI – Need closing referrals</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\"></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\">My work – from about 0:57 to 1:06, I think there should be a shot of Richard as he is speaking “I’m chuckling because…a part of our Network Improvement Community.”</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\">                There is a weird sound at the end (3:14) – maybe Richard coughing?  Possible to eliminate even though it’s over June’s dialogue?</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\">                Need closing referrals</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\"></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style=\"font-size:11.0pt\">Nancy</span></div>\n<div></div>\n<div></div>\n</div>\n\n\n",
+        "description_text":"HI Spenser,\r\n\r\nHere is some feedback and requests for changes on some of the June Ahn videos:\r\n\r\nTrailer – need closing referrals\r\n\r\n5-Year – Possible to start at “When you think about your own scholarship” and eliminate “Another question I’d like to ask”?\r\nNeed closing referrals\r\n\r\nWhy I Came to UCI – Need closing referrals\r\n\r\nMy work – from about 0:57 to 1:06, I think there should be a shot of Richard as he is speaking “I’m chuckling because…a part of our Network Improvement Community.”\r\n                There is a weird sound at the end (3:14) – maybe Richard coughing?  Possible to eliminate even though it’s over June’s dialogue?\r\n                Need closing referrals\r\n\r\nNancy\r\n\r\n_______________________________________________\r\nEducation-Tech-Services mailing list\r\nEducation-Tech-Services@department-lists.uci.edu\r\nhttps://department-lists.uci.edu/mailman/listinfo/education-tech-services\r\n\r\n",
+        "custom_fields":{
+            "cf_support_division":"Administrative",
+            "cf_complexity":null,
+            "cf_pi":null
+        },
+        "created_at":"2019-07-12T20:54:39Z",
+        "updated_at":"2019-07-24T00:00:25Z",
+        "tags":[
+    
+        ],
+        "attachments":[
+    
+        ],
+        "source_additional_info":null,
+        "requester":{
+            "id":2043024813458,
+            "name":"Nancy Christensen",
+            "email":"nchriste@uci.edu",
+            "mobile":null,
+            "phone":null
+        }
+    },
+    "1460": {
+        "cc_emails":[
+            "hosunk@uci.edu",
+            "masonn3@uci.edu"
+        ],
+        "fwd_emails":[
+    
+        ],
+        "reply_cc_emails":[
+            "hosunk@uci.edu"
+        ],
+        "ticket_cc_emails":[
+            "hosunk@uci.edu"
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043046381932,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":5,
+        "subject":"Re: hosun lab updates, admin account, keyboard cable",
+        "association_type":null,
+        "to_emails":[
+            "education-tech-services@uci.edu"
+        ],
+        "product_id":null,
+        "id":1460,
+        "type":"Routine Tasks",
+        "due_by":"2019-07-16T17:11:00Z",
+        "fr_due_by":"2019-07-12T21:24:10Z",
+        "is_escalated":false,
+        "description":"<div dir=\"ltr\">Hi Spenser,<div>Thanks for your help with the computers! This morning when I tried to log on to the mac on the right of Hosun's research lab, it told me that the system failed to update. The only options were to shut down or restart the computer, and I tried both of these but received the same error message. Would you mind coming to look at it? I'll be around almost all day, so can definitely be here when you're working on it if that's easier. </div>\n<div><br></div>\n<div>Thanks again,</div>\n<div>~Jasmine</div>\n</div>\n<br><div class=\"gmail_quote\">\n<div dir=\"ltr\" class=\"gmail_attr\">On Mon, Jul 8, 2019 at 10:20 AM Jasmine McBeath &lt;<a href=\"mailto:kmcbeath@education.ucsb.edu\" rel=\"noreferrer\">kmcbeath@education.ucsb.edu</a>&gt; wrote:<br>\n</div>\n<blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\">\n<div dir=\"ltr\">\n<br><br><div class=\"gmail_quote\">\n<div dir=\"ltr\" class=\"gmail_attr\">---------- Forwarded message ---------<br>From: <strong class=\"gmail_sendername\" dir=\"auto\">Hosun Kang</strong> <span dir=\"auto\">&lt;<a href=\"mailto:hosunk@uci.edu\" target=\"_blank\" rel=\"noreferrer\">hosunk@uci.edu</a>&gt;</span><br>Date: Wed, Jul 3, 2019 at 1:22 PM<br>Subject: Re: hosun lab updates, admin account, keyboard cable<br>To: Spenser Clark &lt;<a href=\"mailto:education-tech-services@uci.edu\" target=\"_blank\" rel=\"noreferrer\">education-tech-services@uci.edu</a>&gt;<br>Cc: Jasmine McBeath &lt;<a href=\"mailto:mcbeath@ucsb.edu\" target=\"_blank\" rel=\"noreferrer\">mcbeath@ucsb.edu</a>&gt;<br>\n</div>\n<br><br>\n\n\n\n<div style=\"overflow-wrap: break-word;\">\nHi Spenser,\n<div>\n<br>\n</div>\n<div>Thank you for taking care of the updates of the computers in my research room.  I am aware of the storage issue of the right side computer.  Jasmine, a postdoc of my project, will take care of it, and then contact you again when it is ready.</div>\n<div>\n<br>\n</div>\n<div>Thanks,</div>\n<div>Hosun</div>\n<div>\n<br>\n</div>\n<div>\n<div>\n<br>\n<blockquote>\n<div>On Jul 3, 2019, at 11:53 AM, Spenser Clark &lt;<a href=\"mailto:education-tech-services@uci.edu\" target=\"_blank\" rel=\"noreferrer\">education-tech-services@uci.edu</a>&gt; wrote:</div>\n<br class=\"gmail-m_-2902555104324978434m_8630033400442512592Apple-interchange-newline\">\n<div>\n<div style='font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-size:14px'>\n<div style='font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-size:14px'>\n<div dir=\"ltr\">\n<div dir=\"ltr\">Hello Hosun,<br>\n<br>\nThe computer on the right is too full to install updates, it needs to have some space cleared. Is there someone who can do that, or who can look at it with me so we can identify files to delete or archive?</div>\n<div>\n<br>\n</div>\n<div dir=\"ltr\">Thank you,</div>\n</div>\n<div dir=\"ltr\">\n<div>\n<span style=\"font-family:Helvetica;font-size:12px\">--Spenser A. Clark | Technical Services | UCIrvine School of Education | </span><a href=\"http://www.education.uci.edu/\" rel=\"noreferrer\" style=\"box-sizing:border-box;background-color:rgb(255,255,255);color:rgb(44,92,197);word-break:break-word;font-family:Helvetica;font-size:12px\" target=\"_blank\">www.education.uci.edu</a><span style=\"font-family:Helvetica;font-size:12px\"> | </span><a href=\"mailto:saclark@uci.edu\" rel=\"noreferrer\" style=\"box-sizing:border-box;background-color:rgb(255,255,255);color:rgb(44,92,197);word-break:break-word;font-family:Helvetica;font-size:12px\" target=\"_blank\">saclark@uci.edu</a><span style=\"font-family:Helvetica;font-size:12px\"> | </span><a rel=\"noreferrer\" style=\"box-sizing:border-box;background-color:rgb(255,255,255);color:rgb(44,92,197);word-break:break-word;font-family:Helvetica;font-size:12px\">949.824.5892</a>\n</div>\n</div>\n<div rel=\"quoted-text\"></div>\n<div class=\"gmail-m_-2902555104324978434m_8630033400442512592freshdesk_quote\"></div>\n</div>\n\n</div>\n</div>\n</blockquote>\n</div>\n<br>\n</div>\n</div>\n\n</div>\n</div>\n</blockquote>\n</div>\n<br><div><br></div>-- <br><div dir=\"ltr\" class=\"gmail_signature\"><div dir=\"ltr\">~Jasmine Nation<div>Postdoctoral Researcher</div>\n<div>Expanding Latinx Students' Opportunities in Science NSF Career Project under Dr. Hosun Kang</div>\n</div></div>\n\n",
+        "description_text":"Hi Spenser,\r\nThanks for your help with the computers! This morning when I tried to log\r\non to the mac on the right of Hosun's research lab, it told me that the\r\nsystem failed to update. The only options were to shut down or restart the\r\ncomputer, and I tried both of these but received the same error message.\r\nWould you mind coming to look at it? I'll be around almost all day, so can\r\ndefinitely be here when you're working on it if that's easier.\r\n\r\nThanks again,\r\n~Jasmine\r\n\r\nOn Mon, Jul 8, 2019 at 10:20 AM Jasmine McBeath <kmcbeath@education.ucsb.edu>\r\nwrote:\r\n\r\n>\r\n>\r\n> ---------- Forwarded message ---------\r\n> From: Hosun Kang <hosunk@uci.edu>\r\n> Date: Wed, Jul 3, 2019 at 1:22 PM\r\n> Subject: Re: hosun lab updates, admin account, keyboard cable\r\n> To: Spenser Clark <education-tech-services@uci.edu>\r\n> Cc: Jasmine McBeath <mcbeath@ucsb.edu>\r\n>\r\n>\r\n> Hi Spenser,\r\n>\r\n> Thank you for taking care of the updates of the computers in my research\r\n> room.  I am aware of the storage issue of the right side computer.\r\n> Jasmine, a postdoc of my project, will take care of it, and then contact\r\n> you again when it is ready.\r\n>\r\n> Thanks,\r\n> Hosun\r\n>\r\n>\r\n> On Jul 3, 2019, at 11:53 AM, Spenser Clark <\r\n> education-tech-services@uci.edu> wrote:\r\n>\r\n> Hello Hosun,\r\n>\r\n> The computer on the right is too full to install updates, it needs to have\r\n> some space cleared. Is there someone who can do that, or who can look at it\r\n> with me so we can identify files to delete or archive?\r\n>\r\n> Thank you,\r\n> --Spenser A. Clark | Technical Services | UCIrvine School of Education |\r\n> www.education.uci.edu | saclark@uci.edu | 949.824.5892\r\n> 1443:1062298\r\n>\r\n>\r\n>\r\n\r\n-- \r\n~Jasmine Nation\r\nPostdoctoral Researcher\r\nExpanding Latinx Students' Opportunities in Science NSF Career Project\r\nunder Dr. Hosun Kang\r\n\r\n_______________________________________________\r\nEducation-Tech-Services mailing list\r\nEducation-Tech-Services@department-lists.uci.edu\r\nhttps://department-lists.uci.edu/mailman/listinfo/education-tech-services\r\n\r\n",
+        "custom_fields":{
+            "cf_support_division":"Research",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":"Kang"
+        },
+        "created_at":"2019-07-08T17:24:09Z",
+        "updated_at":"2019-07-17T17:12:46Z",
+        "tags":[
+            "Mason Nguyen"
+        ],
+        "attachments":[
+    
+        ],
+        "source_additional_info":null,
+        "requester":{
+            "id":2043046381932,
+            "name":"Jasmine McBeath Nation",
+            "email":"nationj@uci.edu",
+            "mobile":null,
+            "phone":null
+        }
+    },
+    "1388": {
+        "cc_emails":[
+    
+        ],
+        "fwd_emails":[
+    
+        ],
+        "reply_cc_emails":[
+    
+        ],
+        "ticket_cc_emails":[
+    
+        ],
+        "fr_escalated":false,
+        "spam":false,
+        "email_config_id":44000061196,
+        "group_id":null,
+        "priority":1,
+        "requester_id":2043024904204,
+        "responder_id":2043025904255,
+        "source":1,
+        "company_id":null,
+        "status":5,
+        "subject":"Package Received",
+        "association_type":null,
+        "to_emails":[
+            "\"Spenser Clark\" <education-tech-services@uci.edu>"
+        ],
+        "product_id":null,
+        "id":1388,
+        "type":"Routine Tasks",
+        "due_by":"2019-07-02T16:19:51Z",
+        "fr_due_by":"2019-07-01T20:19:51Z",
+        "is_escalated":false,
+        "description":"<div class=\"WordSection1\">\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Good morning,</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>We received two large packages for Hyuk here at our office. Please stop by the\n<b>mail room</b> to pick them up at your earliest convenience.</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Thank you!</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>--</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Sincerely,</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'></span></div>\n<div> </div>\n<div></div>\n<div class=\"MsoNormal\"><b><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Kimberly Pham</span></b></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Administrative Assistant</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>Office of the Dean</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>UC Irvine School of Education</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'>(949) 824-8073 | 3200 Education</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"><span style='font-size:10.0pt;font-family:\"Segoe UI\",sans-serif'><a href=\"http://www.education.uci.edu/\" rel=\"noreferrer\"><span style=\"color:#0563C1\">www.education.uci.edu</span></a>\n</span></div>\n<div></div>\n<div></div>\n<div class=\"MsoNormal\"></div>\n<div> </div>\n<div></div>\n</div>\n\n\n",
+        "description_text":"Good morning,\r\n\r\nWe received two large packages for Hyuk here at our office. Please stop by the mail room to pick them up at your earliest convenience.\r\n\r\nThank you!\r\n\r\n--\r\nSincerely,\r\n\r\nKimberly Pham\r\nAdministrative Assistant\r\nOffice of the Dean\r\nUC Irvine School of Education\r\n(949) 824-8073 | 3200 Education\r\nwww.education.uci.edu<http://www.education.uci.edu/>\r\n\r\n\r\n_______________________________________________\r\nEducation-Tech-Services mailing list\r\nEducation-Tech-Services@department-lists.uci.edu\r\nhttps://department-lists.uci.edu/mailman/listinfo/education-tech-services\r\n\r\n",
+        "custom_fields":{
+            "cf_support_division":"Administrative",
+            "cf_complexity":"Level 1 (Anyone)",
+            "cf_pi":null
+        },
+        "created_at":"2019-06-25T16:19:51Z",
+        "updated_at":"2019-07-02T17:11:34Z",
+        "tags":[
+            "Mason Nguyen",
+            "Xinhao Liang"
+        ],
+        "attachments":[
+    
+        ],
+        "source_additional_info":null,
+        "requester":{
+            "id":2043024904204,
+            "name":"Kimberly Pham",
+            "email":"k.pham@uci.edu",
+            "mobile":null,
+            "phone":null
+        }
+    }
+}
