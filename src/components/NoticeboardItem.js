@@ -1,5 +1,5 @@
 import React from 'react';
-import { 
+import {
     Row, Col,
     ListGroupItem,
     Button
@@ -86,7 +86,7 @@ export default function NoticeboardItem ({ticket}) {
             return (<div className="fr-ticket-property">{complexity}</div>);
         }
     }
-    console.log(ticket);
+    // console.log(ticket);
 
     return (
         <ListGroupItem className="freshdesk-list" key={ticket.id}>

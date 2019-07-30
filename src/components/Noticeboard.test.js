@@ -1,32 +1,33 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import {mount} from 'enzyme';
 import axios from 'axios';
-import sinon from 'sinon';
 import Noticeboard from './Noticeboard';
-import tickets from '../../tickets-stub.json';
-import ticketids from '../../ticket-stub.json';
 
-import getTickets from '../get-tickets';
+import mockTickets from '../test-data/get-tickets';
+
+mockTickets(axios);
 
 describe('Noticeboard', () => {
-    let sandbox;
-    beforeEach(() => sandbox = sinon.createSandbox());
-    afterEach(() => sandbox.restore());
+  it('should render without crashing', () => {
 
-    it('should render without crashing', () => {
-        sandbox.stub(axios, 'get').callsFake(getTickets);
+    mount(<Noticeboard subdomain="ucieducation" />);
+  });
 
-        mount(<Noticeboard subdomain="ucieducation" />);
+  it('should retrieve all tickets', () => {
+
+    const wrapper = mount(<Noticeboard subdomain="ucieducation">
+      {(ticket) => (<h1 className="test" key={ticket.id}>{ticket.id}</h1>)}
+    </Noticeboard>);
+
+    wrapper.setState({
+      response: [
+        {id: 1},
+        {id: 2}
+      ]
     });
 
-    it('should retrieve all tickets', () => {
-        sandbox.stub(axios, 'get').callsFake(getTickets);
+    expect(wrapper.find('.test')).toHaveLength(2);
 
-        const wrapper = mount(<Noticeboard subdomain="ucieducation">
-            {(ticket) => (<h1 className="test">{ticket.id}</h1>)}
-        </Noticeboard>);
-        expect(wrapper.find('h1.test')).toHaveLength(6);
-
-    });
+  });
 
 });
