@@ -6,23 +6,13 @@ import Noticeboard from './Noticeboard';
 import tickets from '../../tickets-stub.json';
 import ticketids from '../../ticket-stub.json';
 
-const getTickets = (url, data) => {
-    if (/api\/v2\/tickets\/?\?/i.test(url)) {
-        return Promise.resolve({data: tickets})
-    } else if (/api\/v2\/tickets\/\d+\?/i.test(url)) {
-        const [_, id] = url.match(/api\/v2\/tickets\/(\d+)\?/i);
-        return ticketids[id] 
-            ? Promise.resolve({ data: ticketids[id] }) 
-            : Promise.reject({});
-    }
-    return Promise.reject({});
-}
+import getTickets from '../get-tickets';
 
 describe('Noticeboard', () => {
     let sandbox;
     beforeEach(() => sandbox = sinon.createSandbox());
     afterEach(() => sandbox.restore());
-    
+
     it('should render without crashing', () => {
         sandbox.stub(axios, 'get').callsFake(getTickets);
 
