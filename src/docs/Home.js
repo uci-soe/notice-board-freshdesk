@@ -10,6 +10,7 @@ import {
   Row
 } from 'reactstrap';
 import { Noticeboard } from '../components';
+import { freshdesk } from '../../.credentials.json'
 
 
 const example = dedent(`
@@ -18,7 +19,7 @@ const example = dedent(`
 
   const Example = () => {
     return (
-        <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={1} />
+        <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={2} />
     );
   };
 
@@ -34,8 +35,8 @@ const Home = ({title, gh}) => {
             <Col sm={{ size: 10, offset: 1}}>
               <h1 className="display-4">{title}</h1>
               <p className="lead my-3">
-                An example reactstrap component built, documented & published with <a href="https://github.com/reactstrap/component-template">Component Template </a>
-                that displays incoming tasks assigned to the Technical Support Team at UCI School of Education.
+                A component built, documented & published with <a href="https://github.com/reactstrap/component-template">Component Template </a>
+                that displays technical tasks assigned to the Technical Support Team at UCI School of Education.
               </p>
               <p>
                 <Button outline color="danger" href={`https://github.com/${gh}`}>View on Github</Button>
@@ -62,7 +63,7 @@ const Home = ({title, gh}) => {
               ES6 - import the component you need
             </p>
             <div className="docs-example-custom">
-                <Noticeboard subdomain="ucieducation" limit={2} />
+                <Noticeboard subdomain="ucieducation" limit={2} auth={freshdesk}/>
             </div>
             <pre>
               <PrismCode className="language-jsx">

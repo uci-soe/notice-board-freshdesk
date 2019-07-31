@@ -1,8 +1,7 @@
 import React from 'react';
 import {
     Row, Col,
-    ListGroupItem,
-    Button
+    ListGroupItem
 } from 'reactstrap';
 import './NoticeboardItem.css';
 

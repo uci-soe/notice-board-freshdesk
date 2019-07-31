@@ -2,6 +2,7 @@ import tickets from './tickets-stub';
 import ticketids from './ticket-stub';
 import MockAxios from 'axios-mock-adapter';
 
+// to simulate calling axios get using locally-stored tickets
 export default (axios) => {
 
   const mock = new MockAxios(axios);
