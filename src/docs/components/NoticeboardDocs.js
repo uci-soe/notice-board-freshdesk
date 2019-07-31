@@ -37,23 +37,35 @@ examples.push({
   `
 });
 
-
 examples.push({
-    name: 'Noticeboard - Customization',
+    name: 'Noticeboard - Customization 1',
     demo: (
-        <Noticeboard subdomain="ucieducation" auth={freshdesk}>
-            {({ticket}) => (<div key={ticket.id}>{ticket.id}</div>)}
-        </Noticeboard>
+        <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={2} order_by="updated_at" order_type="asc"/>
     ),
     source: `
-    // pull out just ticket ids
     <Noticeboard subdomain="ucieducation" auth={freshdesk}>
         {(ticket) => (<div>
             {ticket.id}
         </div>)}
     </Noticeboard>
     `
-  });
+});
+
+examples.push({
+    name: 'Noticeboard - Customization 2',
+    demo: (
+        <Noticeboard subdomain="ucieducation" auth={freshdesk}>
+            {({ticket}) => (<div key={ticket.id}>{ticket.id}</div>)}
+        </Noticeboard>
+    ),
+    source: `
+    <Noticeboard subdomain="ucieducation" auth={freshdesk}>
+        {(ticket) => (<div>
+            {ticket.id}
+        </div>)}
+    </Noticeboard>
+    `
+});
 
 const Documentation = () => {
   return (
@@ -84,9 +96,11 @@ const Documentation = () => {
             <dt><pre>priority</pre></dt>
             <dd>- importance of tickets: low, medium, high</dd>
         </dl>
-        <p>Note: It is not required to get all specified fields above at once when calling the Noticeboard
+        <p>It is not required to get all specified fields above at once when calling the Noticeboard
             component. Users may choose to only retrieve parts (e.g. ticket id) of tickets. See examples below.
         </p>
+        <hr />
+        <p>Note: This site presents a mockup of Freshdesk API calls due to confidentiality reasons.</p>
     </DocumentComponent>
   );
 };

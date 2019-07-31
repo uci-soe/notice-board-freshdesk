@@ -15,7 +15,7 @@ export default class Noticeboard extends React.Component {
   }
 
   componentDidMount () {
-    return axios.get(`https://${this.props.subdomain}.freshdesk.com/api/v2/tickets/`, {
+    return axios.get(`https://${this.props.subdomain}.freshdesk.com/api/v2/tickets/?order_by=${this.props.order_by}&order_type=${this.props.order_type}`, {
       auth: this.props.auth
     }).then(response => {
         return Promise.all(response.data.map(ticket => {
@@ -54,8 +54,10 @@ export default class Noticeboard extends React.Component {
 }
 
 Noticeboard.defaultProps = {
-  auth:      {},
-  subdomain: '',
-  limit:     -1,
-  skip:      0
+    auth:      {},
+    subdomain: '',
+    limit:     -1,
+    skip:      0,
+    order_by:  "created_at",
+    order_type: "desc"
 }
