@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import LayoutNav from './layout/Nav';
 import LayoutFooter from './layout/Footer';
 import Home from './Home';
@@ -22,8 +22,10 @@ const Docs = () => {
       <div className="App">
         {/* <LayoutNav title={title} gh={gh} /> */}
         {/* Begin Routes */}
-        <Route exact pattern="/" render={() => <Home title={title} gh={gh} />} />
-        <Route pattern="/documentation" component={Documentation} />
+        <Switch>
+            <Route exact pattern="/" render={() => <Home title={title} gh={gh} />} />
+            <Route pattern="/documentation" component={Documentation} />
+        </Switch>
         {/* End Routes */}
         <LayoutFooter gh={gh} />
       </div>
