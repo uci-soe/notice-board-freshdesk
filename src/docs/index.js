@@ -23,8 +23,8 @@ const Docs = () => {
         {/* <LayoutNav title={title} gh={gh} /> */}
         {/* Begin Routes */}
         <Switch>
-            <Route exact pattern="/" render={() => <Home title={title} gh={gh} />} />
-            <Route pattern="/documentation" component={Documentation} />
+            <Route exact path="/" render={() => <Home title={title} gh={gh} />} />
+            <Route path="/documentation" component={Documentation} />
         </Switch>
         {/* End Routes */}
         <LayoutFooter gh={gh} />
