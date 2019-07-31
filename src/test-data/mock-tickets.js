@@ -7,7 +7,7 @@ export default (axios) => {
 
   const mock = new MockAxios(axios);
 
-  mock.onGet(/api\/v2\/tickets\/?$/i).reply(200, tickets);
+  mock.onGet(/api\/v2\/tickets\/\?order_by=[\w]+&order_type=[\w]+?$/i).reply(200, tickets);
   mock.onGet(/api\/v2\/tickets\/\d+\?/i).reply((config) => {
     const {url}   = config;
     const [_, id] = url.match(/api\/v2\/tickets\/(\d+)\?/i);

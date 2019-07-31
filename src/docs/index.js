@@ -20,7 +20,7 @@ const Docs = () => {
   return (
     <BrowserRouter basename={basename}>
       <div className="App">
-        <LayoutNav title={title} gh={gh} />
+        {/* <LayoutNav title={title} gh={gh} /> */}
         {/* Begin Routes */}
         <Route exact pattern="/" render={() => <Home title={title} gh={gh} />} />
         <Route pattern="/documentation" component={Documentation} />

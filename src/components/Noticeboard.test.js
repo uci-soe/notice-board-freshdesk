@@ -3,8 +3,8 @@ import {mount} from 'enzyme';
 import axios from 'axios';
 import Noticeboard from './Noticeboard';
 
-// import mockTickets from '../test-data/mock-tickets';
-// mockTickets(axios);
+import mockTickets from '../test-data/mock-tickets';
+mockTickets(axios);
 
 describe('Noticeboard', () => {
   it('should render without crashing', () => {

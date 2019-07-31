@@ -1,11 +1,11 @@
 import React from 'react';
 import DocumentComponent from '../layout/DocumentComponent';
 import { Noticeboard } from '../../components';
-import { freshdesk } from '../../../.credentials.json';
+// import { freshdesk } from '../../../.credentials.json';
 
-// import axios from 'axios';
-// import mockTickets from '../../test-data/mock-tickets';
-// mockTickets(axios);
+import axios from 'axios';
+import mockTickets from '../../test-data/mock-tickets';
+mockTickets(axios);
 
 const components = [];
 // Add your component proptype data here
@@ -30,7 +30,7 @@ const examples = [];
 examples.push({
   name: 'Noticeboard - Standard',
   demo: (
-    <Noticeboard subdomain="ucieducation" limit={1} auth={freshdesk}/>
+    <Noticeboard subdomain="ucieducation" limit={1}/>
   ),
   source: `
     <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={1}/>
@@ -40,7 +40,7 @@ examples.push({
 examples.push({
     name: 'Noticeboard - Customization 1',
     demo: (
-        <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={2} order_by="updated_at" order_type="asc"/>
+        <Noticeboard subdomain="ucieducation" limit={2} order_by="updated_at" order_type="asc"/>
     ),
     source: `
     <Noticeboard subdomain="ucieducation" auth={freshdesk}>
@@ -54,7 +54,7 @@ examples.push({
 examples.push({
     name: 'Noticeboard - Customization 2',
     demo: (
-        <Noticeboard subdomain="ucieducation" auth={freshdesk}>
+        <Noticeboard subdomain="ucieducation">
             {({ticket}) => (<div key={ticket.id}>{ticket.id}</div>)}
         </Noticeboard>
     ),
