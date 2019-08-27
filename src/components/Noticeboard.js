@@ -1,63 +1,108 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
   Container,
   ListGroup
 } from 'reactstrap';
 import './Noticeboard.css';
+import qs from 'qs';
 import NoticeboardItem from './NoticeboardItem';
 
-export default class Noticeboard extends React.Component {
+const ONE_MINUTE = 1000 * 60;
 
-  constructor (props) {
-    super(props);
-    this.state = {response: []};
+const buildQuery = (opts) => {
+  let q = {};
+  if (opts.order_by) {
+    q['order_by'] = opts.order_by;
+  }
+  if (opts.order_type) {
+    q['order_type'] = opts.order_type;
+  }
+  if (!opts.displayResolved) {
+    q['filter'] = "new_and_my_open";
+  }
+  if (opts.updated_since) {
+    q['updated_since'] = opts.updated_since;
+  }
+  if (opts.limit > 0) {
+    q['per_page'] = '' + opts.limit;
+  }
+  if (opts.page > 1) {
+    q['page'] = '' + opts.page;
   }
 
-  componentDidMount () {
-    return axios.get(`https://${this.props.subdomain}.freshdesk.com/api/v2/tickets/?order_by=${this.props.order_by}&order_type=${this.props.order_type}`, {
-      auth: this.props.auth
-    }).then(response => {
-        return Promise.all(response.data.map(ticket => {
-            return axios.get(`https://${this.props.subdomain}.freshdesk.com/api/v2/tickets/${ticket.id}?include=requester`, {
-                auth: this.props.auth
-              })
-              .then(response => response.data)
-          }))
-          .then(tickets => this.setState({response: tickets}))
+  return q;
+};
+
+const fetchResponse = (subdomain, auth, opts) => {
+  return axios.get(`https://${subdomain}.freshdesk.com/api/v2/tickets`, {
+    auth: auth,
+    params: {
+      include: 'requester,description',
+      ...buildQuery(opts)
+    },
+    paramsSerializer: function (params) {
+      return qs.stringify(params, {
+        arrayFormat: 'brackets', encoder: function (str) {
+          // Passed in values `a`, `b`, `c`
+          return typeof str === 'string' ? str.trim().replace(/\s+/g, '%20') : str;
+        }
       })
-      .catch(err => {
-        console.error(err.stack);
-      });
-  }
+    },
+  }).then(response => response.data)
+    .catch(err => {
+      console.error(err.stack);
+      return [];
+    });
+};
 
-  limitTickets (tickets) {
-    if (this.props.limit > -1) {
-      console.log(this.props)
-      tickets = tickets.slice(this.props.skip, this.props.skip + this.props.limit)
+const Noticeboard = (
+  {
+    children,
+    auth = {},
+    subdomain = '',
+    displayResolved = true,
+    updated_since = "1970-01-01",
+    limit = -1,
+    page = 0,
+    order_by = "created_at",
+    order_type = "desc"
+  }
+) => {
+
+  const [response, setResponse] = useState([]);
+
+  useEffect(() => {
+    let update;
+    const updateFunc = () => {
+      fetchResponse(subdomain, auth, {order_by, order_type, displayResolved, updated_since, limit, page})
+        .then(resp => setResponse(resp))
+      ;
+      update = setTimeout(() => {
+        updateFunc();
+      }, 5 * ONE_MINUTE);
+    };
+
+    updateFunc();
+
+    return () => {
+      clearTimeout(update);
     }
-    return tickets
-  }
+    // fetchResponse(subdomain, auth, {order_by, order_type, updated_since, displayResolved, limit, page})
+    //   .then(resp => setResponse(resp))
+    // ;
 
-  render () {
-    // console.log(this.state.response)
-    const fsItem = this.props.children || NoticeboardItem;
-    // console.log(fsItem);
-    return (
-      <Container className="freshdesk-notice">
-        <ListGroup>
-          {this.limitTickets(this.state.response).map((ticket) => fsItem({ticket, key: ticket.id}))}
-        </ListGroup>
-      </Container>
-    );
-  }
+  }, [subdomain, auth]);
+
+  const fsItem = children || NoticeboardItem;
+  console.log(fsItem);
+  return (
+    <Container className="freshdesk-notice">
+      <ListGroup>
+        {response.map((ticket) => fsItem({ticket, key: ticket.id}))}
+      </ListGroup>
+    </Container>
+  );
 }
 
-Noticeboard.defaultProps = {
-    auth:      {},
-    subdomain: '',
-    limit:     -1,
-    skip:      0,
-    order_by:  "created_at",
-    order_type: "desc"
-}
+export default Noticeboard;

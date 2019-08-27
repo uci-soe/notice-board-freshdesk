@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { PrismCode } from 'react-prism';
 import { dedent } from 'dentist';
@@ -10,8 +10,10 @@ import {
   Row
 } from 'reactstrap';
 import { Noticeboard } from '../components';
-import { freshdesk } from '../../.credentials.json'
+import Auth from './components/Auth';
+import MockTickets from '../test-data/mock-tickets';
 
+// import { freshdesk } from '../../.credentials.json'
 
 const example = dedent(`
   import React from 'react';
@@ -26,7 +28,10 @@ const example = dedent(`
   export default Example;
 `);
 
+
 const Home = ({title, gh}) => {
+  const { subdomain, auth } = useContext(MockTickets);
+
   return (
     <div>
       <Jumbotron tag="section" className="jumbotron-header text-center my-5">
@@ -47,6 +52,11 @@ const Home = ({title, gh}) => {
         </Container>
       </Jumbotron>
       <Container fluid>
+        <Row style={{marginBottom: 70}}>
+          <Col sm={{ size: 8, offset: 2 }}>
+            <Auth />
+          </Col>
+        </Row>
         <Row>
           <Col sm={{ size: 8, offset: 2 }}>
             <h2>Getting Started</h2>
@@ -63,7 +73,7 @@ const Home = ({title, gh}) => {
               ES6 - import the component you need
             </p>
             <div className="docs-example-custom">
-                <Noticeboard subdomain="ucieducation" limit={2} auth={freshdesk}/>
+                <Noticeboard subdomain={subdomain} auth={auth} limit={2} updated_since="2010-01-01"/>
             </div>
             <pre>
               <PrismCode className="language-jsx">

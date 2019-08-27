@@ -3,10 +3,6 @@ import DocumentComponent from '../layout/DocumentComponent';
 import { Noticeboard } from '../../components';
 // import { freshdesk } from '../../../.credentials.json';
 
-import axios from 'axios';
-import mockTickets from '../../test-data/mock-tickets';
-mockTickets(axios);
-
 const components = [];
 // Add your component proptype data here
 // multiple component proptype documentation supported
@@ -17,9 +13,10 @@ components.push({
     auth: PropTypes.dict,
     subdomain: PropTypes.string,
     limit: PropTypes.int,
-    skip: PropTypes.int,
+    page: PropTypes.int,
     order_by: PropTypes.string,
-    order_type: PropTypes.string
+    order_type: PropTypes.string,
+    displayResolved: PropTypes.bool
 }
   `
 });
@@ -29,9 +26,11 @@ const examples = [];
 // multiple examples supported
 examples.push({
   name: 'Noticeboard - Standard',
-  demo: (
-    <Noticeboard subdomain="ucieducation" limit={1}/>
-  ),
+  demo: (subdomain, auth) => {
+    return (
+      <Noticeboard subdomain={subdomain} auth={auth} limit={1}/>
+    );
+  },
   source: `
     <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={1}/>
   `
@@ -39,27 +38,27 @@ examples.push({
 
 examples.push({
     name: 'Noticeboard - Customization 1',
-    demo: (
-        <Noticeboard subdomain="ucieducation" limit={2} order_by="updated_at" order_type="asc"/>
-    ),
+    demo: (subdomain, auth) => {
+      return (
+        <Noticeboard subdomain={subdomain} auth={auth} limit={2} order_by="updated_at" order_type="asc"/>
+      )
+    },
     source: `
-    <Noticeboard subdomain="ucieducation" auth={freshdesk}>
-        {(ticket) => (<div>
-            {ticket.id}
-        </div>)}
-    </Noticeboard>
+        <Noticeboard subdomain={subdomain} auth={auth} limit={2} order_by="updated_at" order_type="asc"/>
     `
 });
 
 examples.push({
     name: 'Noticeboard - Customization 2',
-    demo: (
-        <Noticeboard subdomain="ucieducation">
+    demo: (subdomain, auth) => {
+      return (
+        <Noticeboard subdomain={subdomain} auth={auth} limit={10}>
             {({ticket}) => (<div key={ticket.id}>{ticket.id}</div>)}
         </Noticeboard>
-    ),
+      );
+    },
     source: `
-    <Noticeboard subdomain="ucieducation" auth={freshdesk}>
+    <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={10}>
         {(ticket) => (<div>
             {ticket.id}
         </div>)}
@@ -67,12 +66,15 @@ examples.push({
     `
 });
 
-const Documentation = () => {
+const Documentation = ({auth, subdomain}) => {
   return (
     <DocumentComponent
       name="Noticeboard"
       components={components}
-      examples={examples}>
+      examples={examples}
+      auth={auth}
+      subdomain={subdomain}
+      >
       <p>Noticeboard is a component that displays technical tasks assigned by the UCI School of Education
           by calling Freshdesk's APIs. Noticeboard is highly customizable, which users can specify the number 
           of tickets, the order types, etc. 
@@ -96,11 +98,13 @@ const Documentation = () => {
             <dt><pre>priority</pre></dt>
             <dd>- importance of tickets: low, medium, high</dd>
         </dl>
-        <p>It is not required to get all specified fields above at once when calling the Noticeboard
-            component. Users may choose to only retrieve parts (e.g. ticket id) of tickets. See examples below.
-        </p>
-        <hr />
-        <p>Note: This site presents a mockup of Freshdesk API calls due to confidentiality reasons.</p>
+      <p>It is not required to get all specified fields above at once when calling the Noticeboard
+          component. Users may choose to only retrieve parts (e.g. ticket id) of tickets. See examples below.
+      </p>
+      <hr />
+      <p>Note: This site presents a mockup of Freshdesk API calls due to confidentiality reasons. If you would
+        like to see the real Freshdesk tickets, please enter your Freshdesk subdomain, username, and password at the
+        homepage.</p>
     </DocumentComponent>
   );
 };

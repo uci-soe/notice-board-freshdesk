@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { PrismCode } from 'react-prism';
 import { dedent } from 'dentist';
+import MockTickets from '../../test-data/mock-tickets';
 
 const DocumentProptypes = (props) => {
   const {
@@ -23,14 +24,16 @@ const DocumentExamples = (props) => {
   const {
     name,
     demo,
-    source
+    source,
   } = props.component;
+
+  const {subdomain, auth} = useContext(MockTickets);
   return (
     <div className="docs-component-props mt-5">
       <h3>{name}</h3>
       { demo && (
         <div className="docs-example-custom">
-          {demo}
+          {demo(subdomain, auth)}
         </div>
       )}
       { source && (
@@ -49,7 +52,7 @@ const DocumentComponent = (props) => {
     name,
     children,
     components = [],
-    examples = []
+    examples = [],
    } = props;
   return (
     <div className="docs-component-section">
