@@ -1,8 +1,8 @@
 // export individual components
-import HelloWorld from './HelloWorld';
 import Noticeboard from './Noticeboard';
+import NoticeboardItem from "./NoticeboardItem";
 
 export {
-  HelloWorld,
-  Noticeboard
+  Noticeboard,
+  NoticeboardItem
 };
