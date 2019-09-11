@@ -30,6 +30,7 @@ const Auth = () => {
         If you have a valid Freshdesk credential and would like to see the real Freshdesk calls,
         please login using your username and password.
       </p>
+      <p style={paraStyle}>* The mockup does not support the <code>limit</code> parameter. *</p>
       <Form inline>
         <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
           <Label for="subdomain" className="mr-sm-2">Subdomain:</Label>

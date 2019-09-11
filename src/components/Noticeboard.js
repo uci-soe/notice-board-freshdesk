@@ -97,11 +97,9 @@ const Noticeboard = (
   const fsItem = children || NoticeboardItem;
   console.log(fsItem);
   return (
-    <Container className="freshdesk-notice">
       <ListGroup>
         {response.map((ticket) => fsItem({ticket, key: ticket.id}))}
       </ListGroup>
-    </Container>
   );
 }
 

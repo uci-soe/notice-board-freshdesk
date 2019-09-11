@@ -105,6 +105,7 @@ const Documentation = ({auth, subdomain}) => {
       <p>Note: This site presents a mockup of Freshdesk API calls due to confidentiality reasons. If you would
         like to see the real Freshdesk tickets, please enter your Freshdesk subdomain, username, and password at the
         homepage.</p>
+      <p>* The mockup does not support `limit` parameter.*</p>
     </DocumentComponent>
   );
 };
