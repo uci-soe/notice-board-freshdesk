@@ -1,7 +1,7 @@
 {
   "name": "notice-board-freshdesk",
   "description": "A React component for displaying technical tasks from Freshdesk",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://uci-soe.github.io/notice-board-freshdesk",
   "repository": {
     "type": "git",
