@@ -1,3 +1,7 @@
 .freshdesk-notice {
     padding: 1em;
 }
+
+.tickets > .no-tickets {
+    content: "Currently there are no upcoming tickets";
+}

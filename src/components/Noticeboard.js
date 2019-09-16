@@ -8,6 +8,10 @@ import './Noticeboard.css';
 import qs from 'qs';
 import NoticeboardItem from './NoticeboardItem';
 
+const TicketsNoTickets = () => {
+  return (<div className="no-tickets" />);
+}
+
 const ONE_MINUTE = 1000 * 60;
 
 const buildQuery = (opts) => {
@@ -66,7 +70,8 @@ const Noticeboard = (
     limit = -1,
     page = 0,
     order_by = "created_at",
-    order_type = "desc"
+    order_type = "desc",
+    noTickets
   }
 ) => {
 
@@ -95,10 +100,13 @@ const Noticeboard = (
   }, [subdomain, auth]);
 
   const fsItem = children || NoticeboardItem;
+  const NoTickets = noTickets || TicketsNoTickets;
   console.log(fsItem);
   return (
-      <ListGroup>
-        {response.map((ticket) => fsItem({ticket, key: ticket.id}))}
+      <ListGroup className="tickets">
+        {response.length
+          ? response.map((ticket) => fsItem({ticket, key: ticket.id}))
+          : NoTickets()}
       </ListGroup>
   );
 }

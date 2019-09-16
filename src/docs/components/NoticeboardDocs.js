@@ -66,6 +66,27 @@ examples.push({
     `
 });
 
+const CustomNoTickets = () => {
+  return (
+    <div className="empty-ticket">
+      <h2>No tickets available</h2>
+      <p>Please check back tomorrow for more details.</p>
+    </div>
+  );
+}
+
+examples.push({
+    name: 'Noticeboard - Customization 3',
+    demo: (subdomain, auth) => {
+      return (
+        <Noticeboard noTickets={CustomNoTickets} />
+      );
+    },
+    source: `
+        <Noticeboard noTickets={CustomNoTickets} />
+    `
+});
+
 const Documentation = ({auth, subdomain}) => {
   return (
     <DocumentComponent
