@@ -28,7 +28,7 @@ const buildQuery = (opts) => {
   if (opts.updated_since) {
     q['updated_since'] = opts.updated_since;
   }
-  if (opts.limit > 0) {
+  if (opts.limit >= 0) {
     q['per_page'] = '' + opts.limit;
   }
   if (opts.page > 1) {
@@ -81,6 +81,7 @@ const Noticeboard = (
     let update;
     const updateFunc = () => {
       fetchResponse(subdomain, auth, {order_by, order_type, displayResolved, updated_since, limit, page})
+        .then(resp => limit >= 0 ? resp.slice(0, limit) : resp)
         .then(resp => setResponse(resp))
       ;
       update = setTimeout(() => {
@@ -97,11 +98,11 @@ const Noticeboard = (
     //   .then(resp => setResponse(resp))
     // ;
 
-  }, [subdomain, auth]);
+  }, [subdomain, auth, order_by, order_type, displayResolved, updated_since, limit, page]);
 
   const fsItem = children || NoticeboardItem;
   const NoTickets = noTickets || TicketsNoTickets;
-  console.log(fsItem);
+  // console.log(fsItem);
   return (
       <ListGroup className="tickets">
         {response.length
