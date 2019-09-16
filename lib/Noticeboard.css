@@ -2,6 +2,6 @@
     padding: 1em;
 }
 
-.tickets > .no-tickets {
+.tickets > .no-tickets::before {
     content: "Currently there are no upcoming tickets";
 }
