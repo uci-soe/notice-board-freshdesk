@@ -10,13 +10,15 @@ components.push({
   name: 'Noticeboard',
   proptypes: `
 {
-    auth: PropTypes.dict,
-    subdomain: PropTypes.string,
-    limit: PropTypes.int,
-    page: PropTypes.int,
-    order_by: PropTypes.string,
-    order_type: PropTypes.string,
-    displayResolved: PropTypes.bool
+    auth: PropTypes.dict, // {username: "XXX", password: "X"}
+    subdomain: PropTypes.string, // ucieducation
+    limit: PropTypes.int, // default -1 => display all; otherwise any non-negative integer
+    page: PropTypes.int, // default 0 => one page; otherwise any non-neg integer
+    order_by: PropTypes.string, // created_at, due_by, updated_at, status
+    order_type: PropTypes.string, // asc, desc
+    displayResolved: PropTypes.bool, // default true => display resolved tickets; otherwise false => only open tickets
+    updated_since: PropTypes.string, // "20019-01-13", "2019-01-15"
+    noTickets: PropTypes.func // display a custom component when there are no tickets
 }
   `
 });
@@ -28,28 +30,28 @@ examples.push({
   name: 'Noticeboard - Standard',
   demo: (subdomain, auth) => {
     return (
-      <Noticeboard subdomain={subdomain} auth={auth} limit={1}/>
+      <Noticeboard subdomain={subdomain} auth={auth} limit={1} />
     );
   },
   source: `
-    <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={1}/>
+    <Noticeboard subdomain="..." auth={...} limit={1} />
   `
 });
 
 examples.push({
-    name: 'Noticeboard - Customization 1',
+    name: 'Noticeboard - Customization: order_by, order_type',
     demo: (subdomain, auth) => {
       return (
-        <Noticeboard subdomain={subdomain} auth={auth} limit={2} order_by="updated_at" order_type="asc"/>
+        <Noticeboard subdomain={subdomain} auth={auth} limit={2} order_by="updated_at" order_type="asc" />
       )
     },
     source: `
-        <Noticeboard subdomain={subdomain} auth={auth} limit={2} order_by="updated_at" order_type="asc"/>
+        <Noticeboard subdomain="..." auth={...} limit={2} order_by="updated_at" order_type="asc" />
     `
 });
 
 examples.push({
-    name: 'Noticeboard - Customization 2',
+    name: 'Noticeboard - Custom Ticket Component',
     demo: (subdomain, auth) => {
       return (
         <Noticeboard subdomain={subdomain} auth={auth} limit={10}>
@@ -58,17 +60,27 @@ examples.push({
       );
     },
     source: `
-    <Noticeboard subdomain="ucieducation" auth={freshdesk} limit={10}>
-        {(ticket) => (<div>
-            {ticket.id}
-        </div>)}
+    <Noticeboard subdomain="..." auth={...} limit={10}>
+        {(ticket) => (<div key={ticket.id}> {ticket.id} </div>)}
     </Noticeboard>
+    `
+});
+
+examples.push({
+  name: 'Noticeboard - No Tickets',
+  demo: (subdomain, auth) => {
+    return (
+      <Noticeboard limit={0} subdomain={subdomain} auth={auth} />
+    );
+  },
+  source: `
+    <Noticeboard limit={0} subdomain="..." auth={...} />
     `
 });
 
 const CustomNoTickets = () => {
   return (
-    <div className="empty-ticket">
+    <div className="empty-ticket" style={({border: "1px solid black"})}>
       <h2>No tickets available</h2>
       <p>Please check back tomorrow for more details.</p>
     </div>
@@ -76,14 +88,25 @@ const CustomNoTickets = () => {
 }
 
 examples.push({
-    name: 'Noticeboard - Customization 3',
+    name: 'Noticeboard - Custom Empty Ticket Component',
     demo: (subdomain, auth) => {
       return (
-        <Noticeboard noTickets={CustomNoTickets} />
+        <Noticeboard limit={0} noTickets={CustomNoTickets} subdomain={subdomain} auth={auth} />
       );
     },
     source: `
-        <Noticeboard noTickets={CustomNoTickets} />
+      const CustomNoTickets = () => {
+        return (
+          <div className="empty-ticket" style={({border: "1px solid black"})}>
+            <h2>No tickets available</h2>
+            <p>Please check back tomorrow for more details.</p>
+          </div>
+        );
+      }
+      
+      /* ... */
+      
+      <Noticeboard subdomain="..." auth={...} limit={0} noTickets={CustomNoTickets} />
     `
 });
 
@@ -97,8 +120,8 @@ const Documentation = ({auth, subdomain}) => {
       subdomain={subdomain}
       >
       <p>Noticeboard is a component that displays technical tasks assigned by the UCI School of Education
-          by calling Freshdesk's APIs. Noticeboard is highly customizable, which users can specify the number 
-          of tickets, the order types, etc. 
+          by calling Freshdesk's APIs. Noticeboard is highly customizable, which users can specify the number
+          of tickets, the order types, etc.
       </p>
       <p>A Noticeboard ticket (aka. question/issue in forums) contains the following: </p>
         <dl>
@@ -126,7 +149,6 @@ const Documentation = ({auth, subdomain}) => {
       <p>Note: This site presents a mockup of Freshdesk API calls due to confidentiality reasons. If you would
         like to see the real Freshdesk tickets, please enter your Freshdesk subdomain, username, and password at the
         homepage.</p>
-      <p>* The mockup does not support `limit` parameter.*</p>
     </DocumentComponent>
   );
 };
