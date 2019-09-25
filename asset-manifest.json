@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/notice-board-freshdesk/static/css/main.b0175547.chunk.css",
+    "main.js": "/notice-board-freshdesk/static/js/main.78f89a86.chunk.js",
+    "main.js.map": "/notice-board-freshdesk/static/js/main.78f89a86.chunk.js.map",
+    "runtime~main.js": "/notice-board-freshdesk/static/js/runtime~main.27708c5e.js",
+    "runtime~main.js.map": "/notice-board-freshdesk/static/js/runtime~main.27708c5e.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/notice-board-freshdesk/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.af532fd8.chunk.js": "/notice-board-freshdesk/static/js/2.af532fd8.chunk.js",
+    "static/js/2.af532fd8.chunk.js.map": "/notice-board-freshdesk/static/js/2.af532fd8.chunk.js.map",
+    "index.html": "/notice-board-freshdesk/index.html",
+    "precache-manifest.1923d91259da4458a298d0662ba8afc5.js": "/notice-board-freshdesk/precache-manifest.1923d91259da4458a298d0662ba8afc5.js",
+    "service-worker.js": "/notice-board-freshdesk/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/notice-board-freshdesk/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.b0175547.chunk.css.map": "/notice-board-freshdesk/static/css/main.b0175547.chunk.css.map"
+  }
+}
