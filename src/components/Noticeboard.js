@@ -78,7 +78,14 @@ const ticketsGenerator = (subdomain, auth) => {
   return {one, all};
 };
 
-
+/**
+ * @deprecated Use ticketsGenerator API
+ *
+ * @param subdomain
+ * @param auth
+ * @param opts
+ * @return {Promise<AxiosResponse<T> | Array>}
+ */
 const fetchResponse = (subdomain, auth, opts) => {
   return axios.get(`https://${subdomain}.freshdesk.com/api/v2/tickets`, {
     auth:             auth,
