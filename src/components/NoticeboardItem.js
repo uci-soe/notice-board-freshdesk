@@ -8,76 +8,13 @@ import moment from 'moment';
 
 export default function NoticeboardItem ({ticket}) {
 
-    const parseDates = (UTCDate) => {
-        let m = moment(UTCDate).format('llll')
-        return m;
-    }
-
-    const displayContent = (desp_text) => {
-        if (desp_text.length <= 250) {
-            return desp_text;
-        } else {
-            return desp_text.substring(0, 250) + "...";
-        }
-    }
-
-    const displayTags = (tags) => {
-        if (tags.length === 0) {
-            return (
-                <div className="fr-empty"></div>
-            )
-        } else {
-            return (
-                tags.map(name => <div className="fr-tag">{name}</div>)
-            );
-        }
-    }
-
-    const displayStatus = (status) => {
-        let status_text = "";
-        switch(status) {
-            case 2:
-                status_text = "OPEN";
-                break;
-            case 3:
-                status_text = "PENDING";
-                break;
-            case 4:
-                status_text = "RESOLVED";
-                break;
-            case 5:
-                status_text = "CLOSED";
-                break;
-            default:
-                status_text = "None";
-        }
-        return (<div className="fr-ticket-property">{status_text}</div>);
-    }
-
-    const displayPriority = (priority) => {
-        switch(priority) {
-            case 2:
-                return (
-                  <div className="fr-priority medium"></div>
-                );
-            case 3:
-                return (
-                  <div className="fr-priority high"></div>
-                );
-            default:
-                return (
-                  <div className="fr-priority low"></div>
-                );
-        }
-    }
-
     return (
         <ListGroupItem className="freshdesk-list fr-ticket-item" key={ticket.id}>
             {displayPriority(ticket.priority)}
             <Row>
                 <Col xs="8">
                     <div className="fr-title">{ticket.subject}</div>
-                    <div className="fr-description">{displayContent(ticket.description_text)}</div>
+                    <div className="fr-description">{displayContent(converseOrDesc(ticket.description_text, ticket.conversations))}</div>
                 </Col>
                 <Col xs="4">
                     <Row>
@@ -106,4 +43,81 @@ export default function NoticeboardItem ({ticket}) {
             </Row>
         </ListGroupItem>
     );
+}
+
+
+
+function converseOrDesc(description, conversations) {
+
+    if (conversations && conversations.length) {
+        // return the body of text of the latest email/note sent
+        return conversations[conversations.length - 1].body_text;
+    }
+
+    return description;
+}
+
+
+
+function parseDates (UTCDate) {
+    let m = moment(UTCDate).format('llll')
+    return m;
+}
+
+function displayContent (desp_text) {
+    if (desp_text && desp_text.length > 250) {
+        return desp_text.substring(0, 250) + "...";
+    } else {
+        return desp_text;
+    }
+}
+
+function displayTags (tags) {
+    if (tags.length === 0) {
+        return (
+          <div className="fr-empty"></div>
+        )
+    } else {
+        return (
+          tags.map(name => <div className="fr-tag">{name}</div>)
+        );
+    }
+}
+
+function displayStatus (status) {
+    let status_text = "";
+    switch(status) {
+        case 2:
+            status_text = "OPEN";
+            break;
+        case 3:
+            status_text = "PENDING";
+            break;
+        case 4:
+            status_text = "RESOLVED";
+            break;
+        case 5:
+            status_text = "CLOSED";
+            break;
+        default:
+            status_text = "None";
+    }
+    return (<div className="fr-ticket-property">{status_text}</div>);
+}
+
+function displayPriority (priority) {
+    switch(priority) {
+        case 2:
+            return (
+              <div className="fr-priority medium"></div>
+            );
+        case 3:
+            return (
+              <div className="fr-priority high"></div>
+            );
+        default:
+            return (
+              <div className="fr-priority low"></div>
+            );
+    }
 }

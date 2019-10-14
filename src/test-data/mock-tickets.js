@@ -28,7 +28,13 @@ class Mock {
   mock() {
     console.log("mock is called");
     this._mock.reset();
-    this._mock.onGet(/api\/v2\/tickets\/?/i).reply(200, tickets);
+    this._mock.onGet(/api\/v2\/search\/tickets\/?/i).reply(200, {total: tickets.length, results: tickets});
+    this._mock.onGet(/api\/v2\/tickets\/\d+/i).reply((config) => {
+      const [_, id] = config.url.match(/tickets\/(\d+)\??/i);
+
+      return ticketids[id] ? [200, ticketids[id]] : [404, null]
+
+    });
   }
 }
 

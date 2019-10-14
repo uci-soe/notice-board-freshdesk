@@ -52,10 +52,11 @@
 }
 .fr-tags .fr-tag {
     background-color: #FFD200;
-    font-size: 0.6rem;
+    color: #0060a4;
+    font-size: 0.7rem;
     font-weight: bold;
-    padding: 1rem;
-    width: 10rem;
+    padding: 0.5rem;
+    max-width: 7.0rem;
     text-align: center;
     border-radius: 15px;
     margin: 0 0.2rem 0.1rem 0;
